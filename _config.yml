@@ -20,13 +20,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 plugins: 
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins_dir:
-  - jekyll-paginate-v2
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -34,17 +34,9 @@ exclude:
 # Produces a cleaner folder structure when using categories
 permalink: /:year/:month/:title.html
 
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 5
-  offset: 0
-  permalink: '/page/:num/'
-  title: ':title - page :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  
+paginate: 5
+paginate_path: "/page/:num/"
+
 show_excerpts: true
 minima:
   social_links:
