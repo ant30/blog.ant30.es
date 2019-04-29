@@ -1,0 +1,32 @@
+<header id="branding" class="site-header" role="banner">
+
+    <hgroup>
+      <h1 id="site-title">
+        <span><a href="{{ "/" | relative_url}}" rel="home">{{ site.title | escape }}</a></span>
+      </h1>
+      <h2 id="site-description">
+        {{- site.description | escape -}}
+      </h2>
+    </hgroup>
+
+    <a href="http://www.ant30.es/">
+      <img src="http://www.ant30.es/wp-content/uploads/2011/12/blog_header.jpg" width="1000" height="288" alt="Notas de ant30">
+    </a>
+    <nav id="access">
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="page-link" href="/">Inicio</a>
+          </li>
+        {% for my_page in site.pages %}
+          {% if my_page.title and my_page.title != "Inicio" and my_page.autogen == nil %}
+          <li>
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </nav>
+
+</header>
