@@ -11,7 +11,7 @@ categories:
   - aplicaciones
   - eldiario.es
 ---
-[<img class="alignleft size-full wp-image-232" alt="eldiario.es enlace" src="http://www.ant30.es/wp-content/uploads/2013/02/brand-128.png" width="128" height="128" />](https://play.google.com/store/apps/details?id=com.thegeekbunch.eldiario)
+[<img class="alignleft size-full wp-image-232" alt="eldiario.es enlace" src="/wp-content/uploads/2013/02/brand-128.png" width="128" height="128" />](https://play.google.com/store/apps/details?id=com.thegeekbunch.eldiario)
 
 Es una aplicación para leer los contenidos de eldiario.es en tu móvil o tablet.
 
